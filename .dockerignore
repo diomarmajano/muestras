@@ -1,0 +1,11 @@
+.vscode/
+.git/
+.gitignore
+
+target/
+.mvn/
+
+*.log
+logs/
+
+src/main/resources/oracle/wallet

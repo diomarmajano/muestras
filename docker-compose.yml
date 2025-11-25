@@ -1,0 +1,10 @@
+services:
+  semanna5-app-2:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src/main/resources/oracle/wallet:/app/wallet:ro
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    restart: unless-stopped
